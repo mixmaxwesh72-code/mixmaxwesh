@@ -1,0 +1,297 @@
+/* Color Variables based on Brand Identity */
+:root {
+    --champagne-gold: #D4AF37;
+    --ivory-white: #F9F8F6;
+    --dusty-rose: #DCAE96;
+    --mocha-brown: #4A3B32;
+    --black: #1A1A1A;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--ivory-white);
+    color: var(--mocha-brown);
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--white);
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--mocha-brown);
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--mocha-brown);
+    font-weight: 400;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--champagne-gold);
+}
+
+.btn-nav {
+    background-color: var(--mocha-brown);
+    color: var(--white) !important;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: var(--champagne-gold);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(26,26,26,0.4), rgba(26,26,26,0.4)), url('https://via.placeholder.com/1920x1080?text=Her+Legacy+Wear+Hero') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--champagne-gold);
+    color: var(--white);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #b3922d;
+}
+
+/* Products Section */
+.products {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.price {
+    color: var(--champagne-gold);
+    font-weight: 600;
+}
+
+/* Size Chart Section */
+.sizing-section {
+    padding: 60px 8%;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.sizing-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.table-container {
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--ivory-white);
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: var(--mocha-brown);
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+}
+
+/* Pre-order Section */
+.preorder-section {
+    padding: 80px 8%;
+    background-color: var(--dusty-rose);
+    text-align: center;
+    color: var(--black);
+}
+
+.preorder-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.preorder-section p {
+    margin-bottom: 30px;
+}
+
+#preorder-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#preorder-form input, #preorder-form select {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 60px 8% 20px 8%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand h3 {
+    font-size: 1.5rem;
+    color: var(--champagne-gold);
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--champagne-gold);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Responsive Mobile Toggle Placeholder */
+@media(max-width: 768px) {
+    nav ul {
+        display: none; /* Can be hooked with JS mobile toggle */
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
